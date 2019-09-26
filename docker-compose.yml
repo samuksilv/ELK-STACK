@@ -47,7 +47,7 @@ services:
   logstash_twitter:
     container_name: logstash_twitter
     image: logstash:7.3.0
-    command: logstash -f /var/opt/logstash-conf/twitter/logstash.conf
+    command: logstash -f /var/opt/logstash-conf/twitter/logstash-heroes.conf
     ports:
       - '5045:5044'
     volumes:
